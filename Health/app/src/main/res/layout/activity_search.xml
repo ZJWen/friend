@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ff0000"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="信息查询"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textColor="#ffffff"
+            android:id="@+id/search_title_tv"/>
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/head_btn_back"
+            android:text="查询"
+            android:textColor="#ffffff"
+            android:id="@+id/search_btn"
+            />
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/head_btn_back"
+            android:text="返回"
+            android:textColor="#ffffff"
+            android:id="@+id/search_cancel_btn"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        >
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:text="开始日期"
+            android:gravity="center"
+            android:textSize="20dp"/>
+        <Button
+            android:id="@+id/search_morning_start_btn"
+            android:layout_width="260dp"
+            android:layout_height="match_parent"
+            android:hint="格式为18:00:00"
+            android:background="@drawable/input_back"
+            android:paddingLeft="10dp"
+            android:layout_marginLeft="10dp"></Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        >
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:text="结束日期"
+            android:gravity="center"
+            android:textSize="20dp"/>
+        <Button
+            android:id="@+id/search_morning_end_btn"
+            android:layout_width="260dp"
+            android:layout_height="match_parent"
+            android:hint="格式为18:00:00"
+            android:background="@drawable/input_back"
+            android:paddingLeft="10dp"
+            android:layout_marginLeft="10dp"
+            ></Button>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#ff0000"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listview"></ListView>
+
+</LinearLayout>
